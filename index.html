@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+  </head>
+  <body>
+    <div id="main_div">
+      <div id="input_div" class="text_div" oninput="get_translation()">
+        <label class="text_label"> 
+          Input text area:
+        </label>
+        <textarea id="input_area" class="text_area"></textarea>
+      </div>
+      <div id="menu_div">
+      <button id="translate_button" onclick="print_dict()">Do the thing</button>
+      <label id="dict_label" onload="print_dict()">gj</label>
+      </div>
+      <div id="output_div" class="text_div">
+        <label class="text_label"> 
+          Output text area:
+        </label>
+        <textarea id="output_area" class="text_area"></textarea>
+      </div>
+    </div>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>
