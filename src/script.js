@@ -19,7 +19,7 @@ function translate_text(text) {
             break;
         }
         else if (text.substr(i, 2).toUpperCase() == key.toUpperCase()) {
-            result = result + change_symbol;(text.substr(i, 2))
+            result = result + change_symbol(text.substr(i, 2))
             i = i + 1;
             changed = true;
             break;
