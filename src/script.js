@@ -1,7 +1,7 @@
 function get_translation() {
     let input_text = document.getElementById("input_area").value;
     let output_text = translate_text(input_text);
-    document.getElementById("output_area").innerText = output_text;
+    document.getElementById("output_area").value = output_text;
 }
 
 let dict = {":е": "ё", "-ь": "ъ", "ьі":"ы", "є":"э"}
