@@ -2,6 +2,11 @@ function get_translation() {
     let input_text = document.getElementById("input_area").value;
     let output_text = translate_text(input_text);
     document.getElementById("output_area").value = output_text;
+    document.getElementById("dict_label").innerHTML = "Characters: " + symbol_count(output_text);
+}
+
+function symbol_count(text) {
+    return text.split(" ").join("").length;
 }
 
 let dict = {":е": "ё", "-ь": "ъ", "ьі":"ы", "є":"э"}
